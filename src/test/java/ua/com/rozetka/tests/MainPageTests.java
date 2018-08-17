@@ -5,10 +5,7 @@ import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.apache.log4j.Logger;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +15,7 @@ import ua.com.rozetka.pages.main.MainPage;
 import javax.swing.*;
 
 import java.io.*;
-import java.util.Properties;
+import java.util.*;
 
 import static com.codeborne.selenide.Selenide.*;
 import static junit.framework.TestCase.assertTrue;
@@ -61,77 +58,74 @@ public class MainPageTests {
         $(By.linkText("Ноутбуки и компьютеры")).hover();
         $(By.linkText("Ноутбуки")).click();
         $(By.linkText("Ноутбуки с SSD")).click();
+        List<SelenideElement> items = $("div.cat-g-b").$$("div.g-i-tile-i-box");
 
 
-    //.shouldHave(Condition.attribute("title", "Ноутбуки с SSD")).click();
-
-
-        Selenide.sleep(5000);
-
-
-    }
-
-    @Test @Ignore
-    public void  headerTest(){
-       // $("input.rz-header-search-input-text").shouldBe(Condition.appear);
-        $("input.rz-header-search-input-text").sendKeys("Lenovo");
-        log.info("sendKeys Lenovo");
-
-        $("div.rz-header-search-suggest-g").shouldBe(Condition.visible);
-
-        ElementsCollection items = $$("div.rz-header-search-suggest-i");
-
-        for (SelenideElement element : items) {
-            if (element.getText().contains("Мобильные телефоны")){
-                element.click();
-                break;
+        if (!items.isEmpty()) {
+            log.info("Item List not empty. OK");
+            for (int i = 0; i < 2; i++) {
+                SelenideElement element = items.get(i);
+                System.out.println(element.$("div.g-i-tile-i-title").getText());
+                element.$("div.g-i-tile-i-image").hover();
+                element.$("span.g-compare").click();
+                Selenide.sleep(500);
             }
         }
+        items = null;
 
-                Selenide.sleep(5000);
+        if ($("div#comparison").$("span.hub-i-count").getText().equals("2")){
+            $("ul.header-user-buttons").$("div#comparison").click();
+        }
+        Selenide.sleep(2000);
+
+        $("div.btn-link-to-compare").$("span.btn-link-i").click();
+        //Selenide.sleep(2000);
+
+        if ($(By.linkText("Все параметры")).exists())
+            $(By.linkText("Все параметры")).click();
+
+        List<SelenideElement> params = $("div.comparison-t").$$("div.comparison-t-row");
+        int allTabDiffCounter = 0;
+        for (SelenideElement row:params) {
+            List<SelenideElement> cells = row.$$("div.comparison-t-cell");
+            Set<String> cellsValues = new HashSet<String>();
+            for (SelenideElement cell:cells){
+
+                if (cell.$("span.chars-value-inner").exists()){
+                    cellsValues.add(cell.$("span.chars-value-inner").text());
+                }
+            }
+                if (cellsValues.size() > 1){
+                    allTabDiffCounter++;
+                }
+                cellsValues = null;
+
+        }
+
+        System.out.println(allTabDiffCounter);
+
+        if ($(By.linkText("Только отличия")).exists())
+            $(By.linkText("Только отличия")).click();
+
+        List<SelenideElement> onlyDiffRows = $("div.comparison-t")
+                .$$("div.comparison-t-cell-first");
+        int onlyDiffTabCounter = onlyDiffRows.size();
+
+        for (SelenideElement row : onlyDiffRows) {
+            if (row.isDisplayed()){
+                onlyDiffTabCounter++;
+            }
+
+        }
+
+        System.out.println(onlyDiffTabCounter);
+        System.out.println("onlyDiffRows " + onlyDiffRows.size());
+
+
+        Assert.assertEquals(allTabDiffCounter, onlyDiffTabCounter);
+
+
+
     }
-/*
-   @Test
-    public void headerTestHW(){
-        SelenideElement searchField = page.getHeader().
-       // SelenideElement searchField = page.getHeader().getSearch().getTextField;
-       // SelenideElement searchBtn = page.getHeader().getSearch().getOkButton;
 
-      //  searchField.setValue("Lenovo");
-      //  searchBtn.click();
-
-       // searchResultPage.shouldBe(Condition.exist);
-    }*/
-
-
-
-
-
-
-
-
-   /* @Test @Ignore
-    public void shouldAppearCityPopUpOnCityRefClick()throws InterruptedException{
-        //given
-        webDriver.get(siteAddress);
-        String cityRef = page.getHeader().getCityRef();
-        WebElement cityRefElem = webDriver.findElement(By.cssSelector(cityRef));
-
-        //when
-        Thread.sleep(3000);
-        cityRefElem.click();
-
-        //then
-        String cityChoosePopup = page.getHeader().getCityChoosePopUp();
-        WebElement popUpElem = webDriver.findElement(By.cssSelector(cityChoosePopup));
-
-        assertTrue("Блок с названиями городов не появился!", popUpElem.isDisplayed());
-
-
-    }
-*/
-    /*@AfterClass
-    public static void close(){
-        webDriver.close();
-    }*/
 }
