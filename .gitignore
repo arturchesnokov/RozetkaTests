@@ -1,8 +1,8 @@
 #Folders
-/target
-/.idea
-/.git
-/.build
+target/
+.idea/
+.git/
+build/
 
 # Compiled class file
 *.class
@@ -62,4 +62,3 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-.idea/workspace.xml
