@@ -23,8 +23,8 @@ public class ItemsCatalogPage {
       for (int i = 0; i < numberOfComparableItems; i++) {
         SelenideElement element = items.get(i);
         element.$("div.g-i-tile-i-image").hover();
-        element.$("span.g-compare").click();
         Selenide.sleep(500);
+        element.$("span.g-compare").click();
       }
     } else {
       logger.error("No elements for compare");

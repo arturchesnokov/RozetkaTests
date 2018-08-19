@@ -1,6 +1,5 @@
 package ua.com.rozetka.tests;
 
-import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.*;
 import org.openqa.selenium.WebDriver;
@@ -12,10 +11,10 @@ import java.util.*;
 import static com.codeborne.selenide.Selenide.*;
 
 
-public class RozetkaWebTests {
+public class RozetkaWebTest {
     private static WebDriver webDriver;
     private MainPage mainPage = new MainPage();
-    private Logger log = Logger.getLogger(RozetkaWebTests.class);
+    private Logger log = Logger.getLogger(RozetkaWebTest.class);
 
     private static String webdriverBrowser;
     private static String webdriverPath;
@@ -33,16 +32,18 @@ public class RozetkaWebTests {
 
         //read properties from config.properties
         siteAddress = config.getProperty("site.address");
+
         //webdriverBrowser = config.getProperty("webdriver.browser");
         //webdriverPath = config.getProperty("webdriver.path");
 
         System.setProperty("selenide.browser", "Chrome"); //set Chrome as browser for start
+        //System.setProperty("selenide.browserSize","1000x640");
         open(siteAddress);
     }
 
 
     @Test
-    public void laptopDifferenceCount(){
+    public void itemsCompareDiferencesCount(){
         String mainMenuCategoryName = "Ноутбуки и компьютеры";
         String menuCategory = "Ноутбуки";
         String itemsCategory = "Ноутбуки с SSD";
@@ -53,8 +54,7 @@ public class RozetkaWebTests {
 
         //Main menu on the main page
         MainMenu mainMenu = mainPage.getMainMenu();
-        mainMenu.selectMainCategory(mainMenuCategoryName);
-        mainMenu.selectCategory(menuCategory);
+        mainMenu.selectMainCategory(mainMenuCategoryName, menuCategory);
 
         //CategoriesCatalog
         CategoriesCatalogPage categoriesCatalog = mainMenu.getCategoriesCatalogPage();
@@ -79,6 +79,7 @@ public class RozetkaWebTests {
 
         Assert.assertEquals("Diffrences count without Differences filter and without are'nt same ",
                 diffCountOnAllParametersTab, diffCountOnOnlyDifferencesTab);
+
 
 
     }

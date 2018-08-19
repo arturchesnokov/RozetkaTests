@@ -11,6 +11,12 @@ public class MainPage {
 
     private MainMenu mainMenu = new MainMenu();
 
+    private void paymentPopupClose(){
+        if ($("a.exponea-banner").exists()){
+            $("span.exponea-close-cross").click();
+        }
+    }
+
     public MainMenu getMainMenu(){
         logger.debug("Get main menu");
         return mainMenu;
