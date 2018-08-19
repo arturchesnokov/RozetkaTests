@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3478fce-a6cd-4d62-b922-5d5b704b2ea6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ua/com/rozetka/tests/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ua/com/rozetka/tests/MainPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/BottomProductsBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/CenterBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/LeftNavigationMenuBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/RightBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/header/HeaderBlock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ua/com/rozetka/tests/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ua/com/rozetka/tests/RozetkaWebTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ua/com/rozetka/tests/MainPageTests.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -17,45 +25,49 @@
     <session id="231504501">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
+          <entry key="class" value="3" />
           <entry key="gitattributes" value="1" />
           <entry key="iml" value="3" />
-          <entry key="java" value="3" />
-          <entry key="properties" value="1" />
+          <entry key="java" value="13" />
+          <entry key="properties" value="2" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
+          <entry key="CLASS" value="3" />
           <entry key="IDEA_MODULE" value="3" />
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="13" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Properties" value="1" />
+          <entry key="Properties" value="2" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1918" />
+          <entry key="java" value="4936" />
+          <entry key="properties" value="113" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1918" />
+          <entry key="JAVA" value="4936" />
+          <entry key="Properties" value="113" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -67,23 +79,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/tests/MainPageTests.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/tests/RozetkaWebTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="121" column="66" lean-forward="true" selection-start-line="121" selection-start-column="66" selection-end-line="121" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3379#3387#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/header/HeaderBlock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="58" column="2" selection-start-line="58" selection-end-line="60" selection-end-column="7" />
+            <state relative-caret-position="490">
+              <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,28 +91,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="187">
+              <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/config/config.properties">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/MainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="35" selection-start-column="13" selection-end-column="35" />
+            <state relative-caret-position="374">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/MainPage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/CategoriesCatalogPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="39" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/ItemsCatalogPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="14" column="66" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/Header.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/CompareListPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="26" />
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/CompareItemsPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="67" lean-forward="true" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,6 +183,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sys</find>
+      <find>Sys</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -137,10 +196,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/config/config.properties" />
-        <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/MainPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/header/HeaderBlock.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/test/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/tests/MainPageTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/LeftNavigationMenuBlock.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/MainMenu.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/CategoriesCatalogPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/Header.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/ItemsCatalogPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/CompareListPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/tests/RozetkaWebTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/CompareItemsPage.java" />
       </list>
     </option>
   </component>
@@ -151,13 +221,15 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1869" />
-    <option name="y" value="176" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1936" />
+    <option name="y" value="77" />
+    <option name="width" value="1920" />
+    <option name="height" value="1167" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <flattenPackages ProjectPane="false" />
@@ -166,6 +238,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -198,6 +271,25 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ua" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RozetkaTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RozetkaTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ua" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RozetkaTests" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RozetkaTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ua" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="rozetka" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -206,6 +298,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ua" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="rozetka" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -215,8 +309,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ua" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="rozetka" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RozetkaTests" type="b2602c69:ProjectViewProjectNode" />
@@ -224,34 +320,40 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rozetka" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RozetkaTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RozetkaTests" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ua" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="rozetka" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RozetkaTests" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="RozetkaTests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534546275400" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534684963002" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SeleniumFramework-master/pom.xml" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Software-Testing\Git\RozetkaTests\src\test\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -265,14 +367,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MainPageTests.laptopDifferenceCount">
+  <component name="RunManager">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RozetkaWebTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rozetka-tests" />
       <extension name="coverage">
         <pattern>
@@ -283,7 +385,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="ua.com.rozetka.tests" />
-      <option name="MAIN_CLASS_NAME" value="ua.com.rozetka.tests.MainPageTests" />
+      <option name="MAIN_CLASS_NAME" value="ua.com.rozetka.tests.RozetkaWebTests" />
       <option name="METHOD_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="$MAVEN_REPOSITORY$" />
@@ -291,7 +393,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTests.headerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RozetkaWebTests.headerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rozetka-tests" />
       <extension name="coverage">
         <pattern>
@@ -300,7 +402,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ua.com.rozetka.tests" />
-      <option name="MAIN_CLASS_NAME" value="ua.com.rozetka.tests.MainPageTests" />
+      <option name="MAIN_CLASS_NAME" value="ua.com.rozetka.tests.RozetkaWebTests" />
       <option name="METHOD_NAME" value="headerTest" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -308,7 +410,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTests.laptopDifferenceCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RozetkaWebTests.laptopDifferenceCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rozetka-tests" />
       <extension name="coverage">
         <pattern>
@@ -317,7 +419,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ua.com.rozetka.tests" />
-      <option name="MAIN_CLASS_NAME" value="ua.com.rozetka.tests.MainPageTests" />
+      <option name="MAIN_CLASS_NAME" value="ua.com.rozetka.tests.RozetkaWebTests" />
       <option name="METHOD_NAME" value="laptopDifferenceCount" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -325,8 +427,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainPageTests.shouldAppearCityPopUpOnCityRefClick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="RozetkaTests" />
+    <configuration name="RozetkaWebTests.shouldAppearCityPopUpOnCityRefClick" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rozetka-tests" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ua.com.rozetka.tests.*" />
@@ -334,7 +436,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ua.com.rozetka.tests" />
-      <option name="MAIN_CLASS_NAME" value="ua.com.rozetka.tests.MainPageTests" />
+      <option name="MAIN_CLASS_NAME" value="ua.com.rozetka.tests.RozetkaWebTests" />
       <option name="METHOD_NAME" value="shouldAppearCityPopUpOnCityRefClick" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -357,17 +459,17 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MainPageTests.shouldAppearCityPopUpOnCityRefClick" />
-      <item itemvalue="JUnit.MainPageTests" />
-      <item itemvalue="JUnit.MainPageTests.headerTest" />
-      <item itemvalue="JUnit.MainPageTests.laptopDifferenceCount" />
+      <item itemvalue="JUnit.RozetkaWebTests.shouldAppearCityPopUpOnCityRefClick" />
+      <item itemvalue="JUnit.RozetkaWebTests" />
+      <item itemvalue="JUnit.RozetkaWebTests.headerTest" />
+      <item itemvalue="JUnit.RozetkaWebTests.laptopDifferenceCount" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MainPageTests.laptopDifferenceCount" />
-        <item itemvalue="JUnit.MainPageTests" />
-        <item itemvalue="JUnit.MainPageTests.headerTest" />
-        <item itemvalue="JUnit.MainPageTests.shouldAppearCityPopUpOnCityRefClick" />
+        <item itemvalue="JUnit.RozetkaWebTests.laptopDifferenceCount" />
+        <item itemvalue="JUnit.RozetkaWebTests" />
+        <item itemvalue="JUnit.RozetkaWebTests.headerTest" />
+        <item itemvalue="JUnit.RozetkaWebTests.shouldAppearCityPopUpOnCityRefClick" />
       </list>
     </recent_temporary>
   </component>
@@ -385,42 +487,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainPageTests_laptopDifferenceCount - 2018.08.18 at 01h 17m 34s.xml">
-      <configuration name="MainPageTests.laptopDifferenceCount" configurationId="JUnit" />
+    <history-entry file="RozetkaWebTests - 2018.08.19 at 15h 37m 04s.xml">
+      <configuration name="RozetkaWebTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageTests_laptopDifferenceCount - 2018.08.18 at 01h 20m 34s.xml">
-      <configuration name="MainPageTests.laptopDifferenceCount" configurationId="JUnit" />
+    <history-entry file="RozetkaWebTests_laptopDifferenceCount - 2018.08.19 at 15h 38m 32s.xml">
+      <configuration name="RozetkaWebTests.laptopDifferenceCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageTests_laptopDifferenceCount - 2018.08.18 at 01h 27m 52s.xml">
-      <configuration name="MainPageTests.laptopDifferenceCount" configurationId="JUnit" />
+    <history-entry file="RozetkaWebTests_laptopDifferenceCount - 2018.08.19 at 15h 39m 17s.xml">
+      <configuration name="RozetkaWebTests.laptopDifferenceCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageTests_laptopDifferenceCount - 2018.08.18 at 01h 28m 24s.xml">
-      <configuration name="MainPageTests.laptopDifferenceCount" configurationId="JUnit" />
+    <history-entry file="RozetkaWebTests_laptopDifferenceCount - 2018.08.19 at 15h 40m 38s.xml">
+      <configuration name="RozetkaWebTests.laptopDifferenceCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageTests_laptopDifferenceCount - 2018.08.18 at 01h 32m 48s.xml">
-      <configuration name="MainPageTests.laptopDifferenceCount" configurationId="JUnit" />
+    <history-entry file="RozetkaWebTests_laptopDifferenceCount - 2018.08.19 at 15h 41m 11s.xml">
+      <configuration name="RozetkaWebTests.laptopDifferenceCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageTests - 2018.08.18 at 01h 41m 26s.xml">
-      <configuration name="MainPageTests" configurationId="JUnit" />
+    <history-entry file="RozetkaWebTests_laptopDifferenceCount - 2018.08.19 at 16h 09m 07s.xml">
+      <configuration name="RozetkaWebTests.laptopDifferenceCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageTests - 2018.08.18 at 01h 43m 20s.xml">
-      <configuration name="MainPageTests" configurationId="JUnit" />
+    <history-entry file="RozetkaWebTests_laptopDifferenceCount - 2018.08.19 at 16h 11m 01s.xml">
+      <configuration name="RozetkaWebTests.laptopDifferenceCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageTests - 2018.08.18 at 01h 47m 12s.xml">
-      <configuration name="MainPageTests" configurationId="JUnit" />
+    <history-entry file="RozetkaWebTests_laptopDifferenceCount - 2018.08.19 at 16h 11m 29s.xml">
+      <configuration name="RozetkaWebTests.laptopDifferenceCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageTests_laptopDifferenceCount - 2018.08.18 at 01h 48m 22s.xml">
-      <configuration name="MainPageTests.laptopDifferenceCount" configurationId="JUnit" />
+    <history-entry file="RozetkaWebTests_laptopDifferenceCount - 2018.08.19 at 16h 15m 15s.xml">
+      <configuration name="RozetkaWebTests.laptopDifferenceCount" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainPageTests_laptopDifferenceCount - 2018.08.18 at 01h 49m 26s.xml">
-      <configuration name="MainPageTests.laptopDifferenceCount" configurationId="JUnit" />
+    <history-entry file="RozetkaWebTests_laptopDifferenceCount - 2018.08.19 at 16h 16m 42s.xml">
+      <configuration name="RozetkaWebTests.laptopDifferenceCount" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="1936" y="77" width="1920" height="1167" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4966443" visible="true" weight="0.27132195" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4966443" visible="true" weight="0.2795699" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -429,7 +531,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5033557" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32981783" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3326886" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39980826" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -437,7 +539,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32981783" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32978722" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -481,34 +583,6 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/Header.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/LeftNavigationMenuBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/CenterBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/RightBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/BottomProductsBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.11.0/selenium-remote-driver-3.11.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class" />
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/builders/JUnit4Builder.class" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class" />
@@ -527,31 +601,69 @@
     <entry file="file://$PROJECT_DIR$/RozetkaTests.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/tests/MainPageTests.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_102/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="121" column="66" lean-forward="true" selection-start-line="121" selection-start-column="66" selection-end-line="121" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3379#3387#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/header/HeaderBlock.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/log4j/log4j/1.2.17/log4j-1.2.17.jar!/org/apache/log4j/Appender.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="58" column="2" selection-start-line="58" selection-end-line="60" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="629">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/RightBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/LeftNavigationMenuBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/BottomProductsBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/CenterBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/header/HeaderBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -562,15 +674,172 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/main/MainPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="374">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/ItemsCatalogPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="14" column="66" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/CategoriesCatalogPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/Header.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/CompareListPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/pages/CompareItemsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="67" lean-forward="true" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ua/com/rozetka/tests/RozetkaWebTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>rozetka-tests</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: log4j:log4j:1.2.17</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
