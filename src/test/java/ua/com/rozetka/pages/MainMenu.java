@@ -11,17 +11,17 @@ public class MainMenu {
   private CategoriesCatalogPage categoriesCatalogPage = new CategoriesCatalogPage();
 
   public void selectMainCategory(String mainMenuCategoryName){
-    logger.debug("Hover cursor on main category in menu: " + mainMenuCategoryName);
     $(By.linkText(mainMenuCategoryName)).hover();
+    logger.info("Hover cursor on main category in menu: " + mainMenuCategoryName + ". OK");
   }
 
   public void selectCategory(String menuCategoryName){
-    logger.debug("Click on category in menu: " + menuCategoryName);
     $(By.linkText(menuCategoryName)).click();
+    logger.info("Click on category in menu: " + menuCategoryName + ". OK");
   }
 
   public CategoriesCatalogPage getCategoriesCatalogPage(){
-    logger.debug("Categories catalog page");
+    logger.info("Get Categories catalog page");
     return  categoriesCatalogPage;
   }
 

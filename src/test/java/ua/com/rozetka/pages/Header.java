@@ -12,7 +12,8 @@ public class Header {
       if (Integer.parseInt($("span.hub-i-count").getText()) == numberOfComparableItems) {
         $("div#comparison").click();
       } else {
-        logger.error("Number of selected item doesn't match to expected");
+        logger.error("Number of selected item doesn't match to expected! Expected:" + numberOfComparableItems +
+                ", Actual:" + Integer.parseInt($("span.hub-i-count").getText()));
       }
     } else {
       logger.error("No selected items to compare");

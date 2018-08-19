@@ -1,11 +1,8 @@
 package ua.com.rozetka.tests;
 
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.junit.*;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import ua.com.rozetka.pages.*;
 
@@ -13,8 +10,7 @@ import java.io.*;
 import java.util.*;
 
 import static com.codeborne.selenide.Selenide.*;
-import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.assertEquals;
+
 
 public class RozetkaWebTests {
     private static WebDriver webDriver;
@@ -54,7 +50,6 @@ public class RozetkaWebTests {
 
         int diffCountOnAllParametersTab = 0;
         int diffCountOnOnlyDifferencesTab = 0;
-        //log.setLevel(Level.DEBUG);
 
         //Main menu on the main page
         MainMenu mainMenu = mainPage.getMainMenu();

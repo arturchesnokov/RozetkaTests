@@ -12,7 +12,7 @@ public class MainPage {
     private MainMenu mainMenu = new MainMenu();
 
     public MainMenu getMainMenu(){
-        logger.debug("Получение главного меню");
+        logger.debug("Get main menu");
         return mainMenu;
     }
 }

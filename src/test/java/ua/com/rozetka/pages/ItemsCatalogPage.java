@@ -15,6 +15,7 @@ public class ItemsCatalogPage {
   private CompareListPage compareListPage = new CompareListPage();
 
   public void selectItemsForCompare(int numberOfComparableItems){
+    logger.debug("Get list of items on the page");
     List<SelenideElement> items = $$("div.g-i-tile-i-box");
 
     if (!items.isEmpty()) {

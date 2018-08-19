@@ -15,8 +15,10 @@ public class CompareItemsPage {
   private Logger logger = Logger.getLogger(CompareItemsPage.class);
 
   public int getDiffCountOnAllParametersTab(){
-    if ($(By.linkText("Все параметры")).exists())
+    if ($(By.linkText("Все параметры")).exists()){
+      logger.info("Click on All parameters tab");
       $(By.linkText("Все параметры")).click();
+    }
 
     List<SelenideElement> params = $$("div.comparison-t-row");
     int allTabDiffCounter = 0;
@@ -35,12 +37,15 @@ public class CompareItemsPage {
       }
       cellsValues = null;
     }
+    logger.debug("Differences count on All parameters Tab:" + allTabDiffCounter);
     return allTabDiffCounter;
   }
 
   public int getDiffCountOnOnlyDifferencesTab(){
-    if ($(By.linkText("Только отличия")).exists())
+    if ($(By.linkText("Только отличия")).exists()){
+      logger.info("Click on Only differences tab");
       $(By.linkText("Только отличия")).click();
+    }
 
     List<SelenideElement> onlyDiffRows = $("div.comparison-t")
             .$$("div.comparison-t-cell-first");
@@ -51,6 +56,7 @@ public class CompareItemsPage {
         onlyDiffTabCounter++;
       }
     }
+    logger.debug("Differences count on Only differences Tab:" + onlyDiffTabCounter);
     return onlyDiffTabCounter;
   }
 

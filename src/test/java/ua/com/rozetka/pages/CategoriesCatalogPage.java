@@ -11,8 +11,8 @@ public class CategoriesCatalogPage {
   private ItemsCatalogPage itemsCatalogPage = new ItemsCatalogPage();
 
   public void selectItemsCategory(String itemsCategory){
-    logger.debug("Click on items category: " + itemsCategory);
     $(By.linkText(itemsCategory)).click();
+    logger.info("Click on items category: " + itemsCategory + ". OK");
   }
 
   public ItemsCatalogPage getItemsCatalogPage(){
