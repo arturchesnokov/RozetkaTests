@@ -14,7 +14,7 @@ public class ItemsCatalogPage {
   private Header header = new Header();
   private CompareListPage compareListPage = new CompareListPage();
 
-  public void selectItemsForCompare(int numberOfComparableItems){
+  public void selectItemsForCompare(int numberOfComparableItems) {
     logger.debug("Get list of items on the page");
     List<SelenideElement> items = $$("div.g-i-tile-i-box");
 
@@ -32,12 +32,12 @@ public class ItemsCatalogPage {
     items = null;
   }
 
-  public Header getHeader(){
+  public Header getHeader() {
     logger.debug("Get Header block");
     return header;
   }
 
-  public CompareListPage getCompareListPage(){
+  public CompareListPage getCompareListPage() {
     logger.debug("Get Compare List");
     return compareListPage;
   }

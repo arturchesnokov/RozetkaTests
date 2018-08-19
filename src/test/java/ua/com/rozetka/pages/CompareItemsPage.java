@@ -20,12 +20,14 @@ public class CompareItemsPage {
       $(By.linkText("Все параметры")).click();
     }
 
-    List<SelenideElement> params = $$("div.comparison-t-row");
-    int allTabDiffCounter = 0;
-    for (SelenideElement row:params) {
-      List<SelenideElement> cells = row.$$("div.comparison-t-cell");
+    List<SelenideElement> rows = $$("div.comparison-t-row");
+    int differentRowsCounter = 0;
+
+    for (SelenideElement row : rows) {
+      List<SelenideElement> rowCellsForConparison = row.$$("div.comparison-t-cell");
       Set<String> cellsValues = new HashSet<String>();
-      for (SelenideElement cell:cells){
+
+      for (SelenideElement cell:rowCellsForConparison){
         if (cell.$("img").exists()){
           cellsValues.add(cell.$("img").getAttribute("src"));
         } else if (cell.$("span.chars-value-inner").exists()){
@@ -33,12 +35,12 @@ public class CompareItemsPage {
         }
       }
       if (cellsValues.size() > 1){
-        allTabDiffCounter++;
+        differentRowsCounter++;
       }
       cellsValues = null;
     }
-    logger.debug("Differences count on All parameters Tab:" + allTabDiffCounter);
-    return allTabDiffCounter;
+    logger.debug("Differences count on All parameters Tab:" + differentRowsCounter);
+    return differentRowsCounter;
   }
 
   public int getDiffCountOnOnlyDifferencesTab(){
@@ -47,8 +49,7 @@ public class CompareItemsPage {
       $(By.linkText("Только отличия")).click();
     }
 
-    List<SelenideElement> onlyDiffRows = $("div.comparison-t")
-            .$$("div.comparison-t-cell-first");
+    List<SelenideElement> onlyDiffRows = $("div.comparison-t").$$("div.comparison-t-cell-first");
     int onlyDiffTabCounter = 0;
 
     for (SelenideElement diffRow : onlyDiffRows) {
@@ -59,7 +60,5 @@ public class CompareItemsPage {
     logger.debug("Differences count on Only differences Tab:" + onlyDiffTabCounter);
     return onlyDiffTabCounter;
   }
-
-
 
 }

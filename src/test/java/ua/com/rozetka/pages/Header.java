@@ -10,11 +10,10 @@ public class Header {
 
   public void clickCompareButtonAfterCounterCheck(int numberOfComparableItems) {
     if ($("span.hub-i-count").shouldHave(Condition.text(String.valueOf(numberOfComparableItems))).exists()) {
-        $("div#comparison").click();
-      } else {
-        logger.error("Number of selected item doesn't match to expected! Expected:" + numberOfComparableItems +
-                ", Actual:" + Integer.parseInt($("span.hub-i-count").getText()));
-      }
+      $("div#comparison").click();
+    } else {
+      logger.error("Number of selected item doesn't match to expected! Expected:" + numberOfComparableItems +
+              ", Actual:" + Integer.parseInt($("span.hub-i-count").getText()));
     }
   }
-
+}

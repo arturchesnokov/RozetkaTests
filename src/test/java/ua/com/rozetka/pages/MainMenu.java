@@ -11,10 +11,10 @@ public class MainMenu {
 
   private CategoriesCatalogPage categoriesCatalogPage = new CategoriesCatalogPage();
 
-  public void selectMainCategory(String mainMenuCategoryName, String menuCategoryName){
+  public void selectMainCategory(String mainMenuCategoryName, String menuCategoryName) {
     $(By.linkText(mainMenuCategoryName)).hover();
     logger.info("Hover cursor on main category in menu: " + mainMenuCategoryName + ". OK");
-    if($(By.linkText(menuCategoryName)).exists()){
+    if ($(By.linkText(menuCategoryName)).exists()) {
       $(By.linkText(menuCategoryName)).click();
     } else {
       paymentPopupClose();
@@ -24,15 +24,14 @@ public class MainMenu {
     }
   }
 
-  public CategoriesCatalogPage getCategoriesCatalogPage(){
+  public CategoriesCatalogPage getCategoriesCatalogPage() {
     logger.info("Get Categories catalog page");
-    return  categoriesCatalogPage;
+    return categoriesCatalogPage;
   }
 
-  private void paymentPopupClose(){
-    if ($("a.exponea-banner").exists()){
+  private void paymentPopupClose() {
+    if ($("a.exponea-banner").exists()) {
       $("span.exponea-close-cross").click();
     }
   }
-
 }
