@@ -2,7 +2,7 @@
 target/
 .idea/
 .git/
-.build/
+build/
 
 # Compiled class file
 *.class
@@ -62,4 +62,3 @@ target/
 .Trashes
 ehthumbs.db
 Thumbs.db
-.idea/workspace.xml
