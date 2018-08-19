@@ -1,8 +1,8 @@
 #Folders
-target/
-.idea/
-.git/
-.build/
+/target
+/.idea
+/.git
+/.build
 
 # Compiled class file
 *.class
